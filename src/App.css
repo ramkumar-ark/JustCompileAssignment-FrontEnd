@@ -1,0 +1,15 @@
+.main {
+  position: relative;
+  top: 73px;
+  padding: 60px;
+  height: 75.5vh;
+}
+
+@media (max-width: 360px) {
+  .main {
+    position: relative;
+    top: 73px;
+    padding: 58px 42px;
+    height: 60vh;
+  } 
+}
