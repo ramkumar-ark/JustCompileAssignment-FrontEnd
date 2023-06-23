@@ -1,0 +1,98 @@
+.dashboard-section {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100%;
+}
+
+.add-note-section {
+    width: 35%;
+    padding-right: 85px;
+    border-right: 1px solid black;
+}
+
+.add-note-section h1, .view-notes-section h1 {
+    font-weight: normal;
+    font-size: 45px;
+}
+
+.add-note-section button {
+    margin-left: 0px;
+}
+
+.note-input {
+    background-color: #D9D9D9;
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.view-notes-section {
+    width: 65%;
+    padding: 0px 13.5%;
+}
+
+.view-notes-section h1 {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 15px;
+}
+
+.note-card {
+    margin-bottom: 20px;
+}
+
+.note-display {
+    padding: 10px 5px;
+    background-color: #F2FEC3;
+    font-size: 20px;
+}
+
+.time-display {
+    text-align: end;
+}
+
+@media (max-width: 360px) {
+    .dashboard-section {
+        flex-direction: column;
+        margin-top: -40px;
+    }
+
+    .add-note-section {
+        width: auto;
+        border-bottom: 1px solid black;
+        border-right: none;
+        padding-bottom: 30px;
+        padding-right: 0;
+    }
+
+    .note-input {
+        width: min-content;
+        margin-bottom: 10px;
+    }
+
+    .view-notes-section {
+        width: 100%;
+        padding: 0;
+    }
+
+    .note-card {
+        margin-bottom: 20px;
+        background-color: #F2FEC3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    .note-display {
+        padding: 10px 5px;
+        font-size: 20px;
+    }
+    
+    .time-display {
+        text-align: end;
+    }
+}

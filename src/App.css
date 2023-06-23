@@ -2,14 +2,16 @@
   position: relative;
   top: 73px;
   padding: 60px;
-  height: 75.5vh;
+  min-height: 75.5vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media (max-width: 360px) {
   .main {
     position: relative;
     top: 73px;
-    padding: 58px 42px;
-    height: 60vh;
+    padding: 58px 30px;
+    min-height: 60vh;
   } 
 }

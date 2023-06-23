@@ -1,0 +1,40 @@
+.signup-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.signup-section__image {
+    min-height: 500px;
+    height: auto;
+    width: 41.83%;
+    background-color: #FC9797;
+}
+
+.signup-section__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 360px) {
+    .signup-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .signup-section__image {
+        display: none;
+    }
+
+    .signup-section__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

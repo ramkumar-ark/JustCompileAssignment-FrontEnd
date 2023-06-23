@@ -4,6 +4,30 @@
     height: 73px;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 60px;
+    box-sizing: border-box;
 }
+
+.header h1 {
+    font-size: 48px;
+    font-weight: normal;
+    margin: 0;
+}
+
+@media (max-width:360px) {
+    .header {
+        padding: 3px 30px;
+    }
+    .header h1 {
+        font-size: 20px;
+    }
+    .header button {
+        width: fit-content;
+    }
+}
+

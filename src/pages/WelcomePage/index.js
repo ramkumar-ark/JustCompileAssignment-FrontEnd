@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ButtonNormal } from '../../components/Buttons';
 import HeadingMain from '../../components/HeadingMain';
 import './index.css';
@@ -14,8 +15,12 @@ export default function WelcomePage() {
                 <div className='welcome-section__content__main'>
                     <h1 className='welcome-heading'>Welcome</h1>
                     <div className='welcome-section__buttons'>
-                        <ButtonNormal buttonText='Register' onClickFunction={() => {}}/>
-                        <ButtonNormal buttonText='Login' onClickFunction={() => {}}/>
+                        <Link to={'signup'}>
+                            <ButtonNormal buttonText='Register' onClickFunction={() => {}}/>
+                        </Link>
+                        <Link to={'login'}>
+                            <ButtonNormal buttonText='Login' onClickFunction={() => {}}/>
+                        </Link>
                     </div>
                 </div>
             </div>
